@@ -1,0 +1,79 @@
+<resources>
+    <!-- SYSTEM -->
+    <string name="app_name">CKare</string>
+    <string name="main_app_button_text">Get Started</string>
+
+    <!-- TOAST -->
+    <string name="toast_teacher_inactive_actions">The teacher must be active to Add/Update an appointment record</string>
+    <string name="toast_add_teacher">A teacher record has been added</string>
+    <string name="toast_delete_teacher">A teacher record has been deleted</string>
+    <string name="toast_add_appointment">An appointment record has been added</string>
+    <string name="toast_delete_appointment">An appointment record has been deleted</string>
+    <string name="toast_teacher_teacher_name_invalid">Teacher Name must contain at least 1 to 25 letters or whitespace</string>
+    <string name="toast_teacher_subject_teaches_invalid">Subject Teaches must contain at least 2 to 40 letters or whitespace or comma only</string>
+    <string name="toast_teacher_payment_per_day_invalid">"Payment per day can contain up to 2 whole numbers and 2 decimal points only. (Eg. 30.50)"</string>
+    <string name="toast_appointment_child_name_invalid">Child name must contain at least 1 to 25 letters or whitespace only</string>
+    <string name="toast_appointment_contact_number_invalid">Contact number must contain at least 9 to 11 numbers only. (Eg. 0123456789)</string>
+
+
+    <!-- MENU ITEMS -->
+    <string name="menu_add_teacher">Add Teacher</string>
+    <string name="menu_navigate_appointment">Appointment</string>
+    <string name="menu_delete_teacher">Delete Teacher</string>
+    <string name="menu_add_appointment">Add Appointment</string>
+    <string name="menu_delete_appointment">Delete Appointment</string>
+
+    <!-- TEACHER LIST -->
+    <string name="teacher_list_title">Teacher Information</string>
+    <string name="teacher_list_name">Teacher\'s Name: %s</string>
+    <string name="teacher_list_gender">Teacher\'s Gender: %s </string>
+    <string name="teacher_list_payment_per_day">Payment Per Day: RM %.2f</string>
+    <string name="teacher_list_subject_teaches">Subject Teaches: %s</string>
+    <string name="teacher_list_is_active_status">Is Active: %s</string>
+
+    <!-- TEACHER INFORMATION -->
+    <string name="teacher_name_label">Teacher\'s Name:</string>
+    <string name="teacher_gender_label">Teacher\'s Gender:</string>
+    <string name="teacher_subject_teaches_label">Subject Teaches:</string>
+    <string name="teacher_payment_per_day_label">Payment Per Day:</string>
+    <string name="teacher_is_active_label">Is Active?</string>
+
+    <!-- APPOINTMENT LIST -->
+    <string name="appointment_list_title">Appointment Information</string>
+    <string name="appointment_list_child_name">Child\'s Name: %s</string>
+    <string name="appointment_list_person_contact_number">Person Contact Number: %s</string>
+    <string name="appointment_list_day_of_week">Day of Week: %s</string>
+    <string name="appointment_list_date">Date: %s</string>
+    <string name="appointment_list_check_in_time">Check in Time: %s</string>
+
+    <!-- APPOINTMENT INFORMATION -->
+    <string name="appointment_child_name_label">Child\'s Name:</string>
+    <string name="appointment_person_contact_number_label">Contact Number:</string>
+    <string name="appointment_date_label">Date:</string>
+    <string name="appointment_check_in_time_label">Check in Time:</string>
+    <string name="appointment_paid_label">Paid?</string>
+    <string name="appointment_settled_label">Settled?</string>
+    <string name="appointment_remove_photo_text">Remove Photo</string>
+
+    <!-- HINT -->
+    <string name="teacher_name_hint">Enter teacher name here ... (Eg. ck)</string>
+    <string name="teacher_subject_teaches_hint">Enter subject teaches here ... (Eg. Mathematics)</string>
+    <string name="teacher_payment_per_day_hint">Enter payment per day here ... (Eg. 99.50)</string>
+    <string name="appointment_child_name_hint">Enter your child name here ... (Eg. ck)</string>
+    <string name="appointment_person_contact_number_hint">(Eg. 0123456789)</string>
+
+    <!-- GENDER SPINNER -->
+    <string-array name="gender_list">
+        <item>Select a gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- DATE PICKER -->
+    <string name="date_picker_title">Appointment Date:</string>
+
+    <!-- TIME PICKER -->
+    <string name="time_picker_title">Appointment Time:</string>
+
+</resources>

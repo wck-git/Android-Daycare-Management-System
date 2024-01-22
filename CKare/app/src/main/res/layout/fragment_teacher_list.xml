@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teacher_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/gender_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_icon" />
+
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/teacher_list_name"
+        app:layout_constraintBottom_toTopOf="@+id/teacher_subject_teaches"
+        app:layout_constraintEnd_toStartOf="@+id/navigate_next"
+        app:layout_constraintStart_toEndOf="@+id/gender_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/teacher_subject_teaches"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/teacher_list_subject_teaches"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/teacher_payment_per_day"
+        app:layout_constraintEnd_toStartOf="@+id/navigate_next"
+        app:layout_constraintStart_toEndOf="@+id/gender_icon"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_name" />
+
+    <TextView
+        android:id="@+id/teacher_payment_per_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/teacher_list_payment_per_day"
+        app:layout_constraintBottom_toBottomOf="@+id/teacher_is_active"
+        app:layout_constraintEnd_toStartOf="@+id/navigate_next"
+        app:layout_constraintStart_toEndOf="@+id/gender_icon"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_subject_teaches" />
+
+    <TextView
+        android:id="@+id/teacher_is_active"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/teacher_list_is_active_status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/navigate_next"
+        app:layout_constraintStart_toEndOf="@+id/gender_icon"
+        app:layout_constraintTop_toBottomOf="@+id/teacher_payment_per_day" />
+
+    <ImageView
+        android:id="@+id/navigate_next"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_next_icon" />
+
+</android.support.constraint.ConstraintLayout>

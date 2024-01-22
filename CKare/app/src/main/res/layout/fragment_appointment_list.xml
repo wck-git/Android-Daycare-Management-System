@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appointment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:paddingStart="20dp">
+
+    <!--CHILD NAME-->
+    <TextView
+        android:id="@+id/appointment_child_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/appointment_list_child_name"
+        app:layout_constraintBottom_toTopOf="@+id/appointment_person_contact_number"
+        app:layout_constraintEnd_toStartOf="@+id/appointment_settled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- PERSON CONTACT NUMBER-->
+    <TextView
+        android:id="@+id/appointment_person_contact_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/appointment_list_person_contact_number"
+        app:layout_constraintBottom_toTopOf="@+id/appointment_date"
+        app:layout_constraintEnd_toStartOf="@+id/appointment_settled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_child_name" />
+
+    <!-- DATE -->
+    <TextView
+        android:id="@+id/appointment_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/appointment_list_date"
+        app:layout_constraintBottom_toTopOf="@+id/appointment_day_of_week"
+        app:layout_constraintEnd_toStartOf="@+id/appointment_settled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_person_contact_number" />
+
+    <!-- DAY OF WEEK -->
+    <TextView
+        android:id="@+id/appointment_day_of_week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/appointment_list_day_of_week"
+        app:layout_constraintBottom_toTopOf="@+id/appointment_check_in_time"
+        app:layout_constraintEnd_toStartOf="@+id/appointment_settled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_check_in_time" />
+
+
+    <!-- CHECK IN TIME -->
+    <TextView
+        android:id="@+id/appointment_check_in_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/appointment_list_check_in_time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/appointment_settled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_day_of_week" />
+
+    <!-- HAS SETTLED -->
+    <ImageView
+        android:id="@+id/appointment_settled"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_settled_icon" />
+
+</android.support.constraint.ConstraintLayout>

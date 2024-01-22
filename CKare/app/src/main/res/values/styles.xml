@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Main App theme -->
+    <style name="MainAppTheme">
+        <item name="android:background">@color/colorLightPurple</item>
+    </style>
+
+    <!-- Date picker theme -->
+    <style name="DatePickerTheme">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!-- Time picker theme -->
+    <style name="TimePickerTheme" >
+        <!-- Text color -->
+        <item name="android:textColorPrimary">@color/colorDark</item>
+        <!-- Divider color -->
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+
+</resources>
